@@ -1,0 +1,42 @@
+# .gitignore for ROS 2 project
+
+# Build artifacts
+build/
+devel/
+install/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ROS bag files
+*.db3
+*.db3-journal
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data and logs
+data/
+logs/
+*.log
+
+# Model files (optional - can be large)
+models/
+*.pt
+*.pth
+*.onnx
+
+# Temporary files
+tmp/
+temp/

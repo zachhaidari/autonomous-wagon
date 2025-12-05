@@ -1,0 +1,53 @@
+# Wagon Configuration Parameters
+
+# Motor Control
+motor:
+  max_speed: 1.5  # m/s
+  min_speed: 0.1  # m/s
+  acceleration_limit: 0.5  # m/s^2
+  deceleration_limit: 1.0  # m/s^2
+  pid_kp: 1.0
+  pid_ki: 0.1
+  pid_kd: 0.05
+
+# Steering Control
+steering:
+  max_angle: 45  # degrees
+  center_bias_strategy: "max_score"  # or "re-id_to_priority"
+  pid_kp: 0.8
+  pid_ki: 0.05
+  pid_kd: 0.1
+
+# Vision / Target Tracking
+vision:
+  target_confidence_threshold: 0.7
+  tracking_timeout: 2.0  # seconds
+  nn_model_path: "/path/to/model.pt"
+  camera_id: 0
+
+# Depth Sensor
+depth:
+  min_distance: 0.3  # meters (minimum safe following distance)
+  max_distance: 3.0  # meters (max tracking range)
+  frame_rate: 30  # Hz
+  resolution: [640, 480]
+
+# Safety Parameters
+safety:
+  data_staleness_threshold: 1.0  # seconds
+  obstacle_detection_range: 0.5  # meters
+  obstacle_confidence_threshold: 0.6
+  emergency_stop_timeout: 0.5  # seconds
+
+# Sensors
+sensors:
+  imu:
+    frame_id: "imu_link"
+    publish_rate: 50  # Hz
+  gps:
+    frame_id: "gps_link"
+    publish_rate: 10  # Hz
+  encoders:
+    wheel_diameter: 0.1  # meters
+    pulses_per_revolution: 20
+    publish_rate: 20  # Hz
