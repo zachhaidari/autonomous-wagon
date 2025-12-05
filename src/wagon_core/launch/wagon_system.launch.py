@@ -12,7 +12,7 @@ def generate_launch_description():
     
     # Get package directory
     wagon_core_dir = get_package_share_directory('wagon_core')
-    config_dir = os.path.join(wagon_core_dir, '..', '..', 'config')
+    config_dir = os.path.join(wagon_core_dir, 'config')
     
     # Load parameters
     params = os.path.join(config_dir, 'wagon_params.yaml')

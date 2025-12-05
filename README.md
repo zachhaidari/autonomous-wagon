@@ -71,15 +71,15 @@ autonomous-wagon/
 
 ## Prerequisites
 
-- **OS**: Ubuntu 22.04 LTS (ROS 2 Humble) or Ubuntu 24.04 (ROS 2 Iron)
-- **Python**: 3.10+
-- **ROS 2**: Humble or Iron distribution
+- **OS**: Ubuntu 24.04 LTS (ROS 2 Jazzy)
+- **Python**: 3.12
+- **ROS 2**: Jazzy distribution
 - **Hardware**: Raspberry Pi 4, depth camera (e.g., Intel RealSense), sensors
 
 ## Installation
 
 ### 1. Install ROS 2
-Follow [ROS 2 installation guide](https://docs.ros.org/en/humble/Installation.html) for your platform.
+Follow [ROS 2 installation guide](https://docs.ros.org/en/jazzy/Installation.html) for your platform.
 
 ### 2. Create Workspace
 ```bash

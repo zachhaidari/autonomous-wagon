@@ -11,8 +11,8 @@ Autonomous following wagon system that uses computer vision (depth camera + neur
 - **Core**: Main coordinator and calibration tools
 
 ## Key Technologies
-- ROS 2 (Humble/Iron)
-- Python 3.10+
+- ROS 2 Jazzy
+- Python 3.12
 - PyTorch/TensorFlow for NN inference
 - OpenCV for vision processing
 - Hardware: Raspberry Pi 4, depth camera, stepper motors, IMU, GPS

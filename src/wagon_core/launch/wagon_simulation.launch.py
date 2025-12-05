@@ -10,7 +10,7 @@ def generate_launch_description():
     """Generate launch description for wagon system in simulation."""
     
     wagon_core_dir = get_package_share_directory('wagon_core')
-    config_dir = os.path.join(wagon_core_dir, '..', '..', 'config')
+    config_dir = os.path.join(wagon_core_dir, 'config')
     params = os.path.join(config_dir, 'wagon_params.yaml')
     
     return LaunchDescription([
